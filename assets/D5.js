@@ -15,7 +15,7 @@ console.log("ESERCIZIO 1")
 
 const pets = ['dog', 'cat', 'hamster', 'redfish']
 for (let i=0; i< pets.length; i++){
-  console.log(pets[i]);
+  console.log("Elemento array: " + pets[i]);
 
 }
   
@@ -27,7 +27,7 @@ console.log("ESERCIZIO 2")
 
 
 pets.sort();
-console.log("L'ordine alfabetico è " + pets);
+console.log("Ordinare alfabeticamente: " + pets);
 
 
 /* ESERCIZIO 3
@@ -37,7 +37,7 @@ console.log("L'ordine alfabetico è " + pets);
 console.log("ESERCIZIO 3")
 
 pets.reverse();
-console.log("L'ordine alfabetico invertito è " + pets);
+console.log("Ordinare alfabeticamente in ordine invertito: " + pets);
 
 
 /* ESERCIZIO 4
@@ -87,8 +87,6 @@ for (let i = 0; i < cars.length; i++) {
   console.log(cars[i]);
 }
 
- 
-
 
 
 /* ESERCIZIO 6
@@ -110,31 +108,23 @@ cars.push(newCar);
 console.log(cars);
 
 
-for (let i =0; i < cars.length; i++ ){
-  delete cars[i].trims; 
-  console.log(cars[i]);
-}
-
-
-
 
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
-const justTrims = []
+
 
 console.log("ESERCIZIO 7")
 
+const justTrims = []
 
-/* 
-for (let i =0; i < cars.length; i++ ){
-  justTrims.push(cars[i].trims[0]);
-
+for (let i=0; i < cars.length; i++){
+  justTrims.push(cars[i].trims[0])
 }
-console.log(justTrims);
- */
- 
+console.log(justTrims)
+
+
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -152,8 +142,6 @@ for (let i =0; i < cars.length; i++ ){
   }
 
 }
-
-
 
 
 /* ESERCIZIO 9
@@ -183,14 +171,80 @@ const charactersArray = ['g', 'n', 'u', 'z', 'd']
 
 console.log("ESERCIZIO 10")
 
-const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'z'];
+const newsArray = [];
 
+for (let i =0; i < charactersArray.length; i++ ){
 
-/* for (let i =0; i < charactersArray; i++ ){
-  if (charactersArray[0]) {
-    console.log()
+  switch (charactersArray[i]) {
+    case "a":
+      newsArray.push(1)
+      break;
+    case "b":
+      newsArray.push(2)
+      break;
+    case "c":
+      newsArray.push(3)
+      break;
+    case "d":
+      newsArray.push(4)
+      break;
+    case "e":
+      newsArray.push(5)
+      break;
+    case "f":
+      newsArray.push(6)
+      break;
+    case "g":
+      newsArray.push(7)
+      break;
+    case "h":
+      newsArray.push(8)
+      break;
+    case "i":
+      newsArray.push(9)
+      break;
+    case "l":
+      newsArray.push(10)
+      break;
+    case "m":
+      newsArray.push(11)
+      break;
+    case "n":
+      newsArray.push(12)
+      break;
+    case "o":
+      newsArray.push(13)
+      break;
+    case "p":
+      newsArray.push(14)
+      break;
+    case "q":
+      newsArray.push(15)
+      break;
+    case "r":
+      newsArray.push(16)
+      break;
+    case "s":
+      newsArray.push(17)
+      break;
+    case "t":
+      newsArray.push(18)
+      break;
+    case "u":
+      newsArray.push(19)
+      break;
+    case "v":
+      newsArray.push(20)
+      break;
+    case "z":
+      newsArray.push(21)
+      break;     
+  
+    default:
+      console.log("Carattere non trovato");
+      break;
   }
 
-}
 
- */
+}
+console.log(newsArray); 
